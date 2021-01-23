@@ -2,7 +2,7 @@ import { gameEngine, getRandomInt } from '../src/index.js';
 
 const settings = {
   min: 0,
-  max: 100
+  max: 100,
 };
 
 const getQuestionData = () => {

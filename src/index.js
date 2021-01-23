@@ -13,7 +13,7 @@ const messages = {
   question: 'Question:',
   wrongAnswer: 'is wrong answer ;(. Correct answer was',
   tryAgain: "Let's try again",
-  final: 'Congratulations,'
+  final: 'Congratulations,',
 };
 
 const getRandomInt = (min, max) => {

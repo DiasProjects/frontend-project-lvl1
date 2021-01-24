@@ -39,16 +39,13 @@ const gameEngine = (options) => {
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' ${messages.wrongAnswer} '${correctAnswer}'.`);
       console.log(`${messages.tryAgain} ${userName}!`);
-      break;
-    } else {
-      console.log(messages.correct);
-      correctAnswersCount += 1;
+      return;
     }
+
+    console.log(messages.correct);
   }
 
-  if (correctAnswersCount === settings.questionsCount) {
-    console.log(`${messages.final} ${userName}!`);
-  }
+  console.log(`${messages.final} ${userName}!`);
 };
 
 export default gameEngine;

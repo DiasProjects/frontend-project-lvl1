@@ -16,8 +16,22 @@ const generateProgression = (options) => {
   return arr.map((item, index) => item + step * index);
 };
 
+const isPrime = (number) => {
+  if (number < 2) {
+    return false;
+  }
+  const sqrtOfNum = Math.sqrt(number);
+  for (let i = 2; i <= sqrtOfNum; i += 1) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+  return true;
+};
+
 export {
   calcNod,
   getRandomInt,
   generateProgression,
+  isPrime,
 };

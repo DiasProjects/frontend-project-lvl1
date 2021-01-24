@@ -5,7 +5,7 @@ const settings = {
 };
 
 const messages = {
-  welcome: 'Welcome to the Brain Games! engine',
+  welcome: 'Welcome to the Brain Games!',
   getAnswer: 'Your answer: ',
   getUserName: 'May I have your name? ',
   correct: 'Correct!',

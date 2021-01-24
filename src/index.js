@@ -23,7 +23,6 @@ const getUserAnswer = () => {
 
 const gameEngine = (options) => {
   const { rules, getQuestionData } = options;
-  let correctAnswersCount = 0;
 
   console.log(messages.welcome);
   const userName = readlineSync.question(messages.getUserName);

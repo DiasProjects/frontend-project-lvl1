@@ -1,4 +1,5 @@
-import { gameEngine, getRandomInt } from '../src/index.js';
+import gameEngine from '../src/index.js';
+import { getRandomInt } from '../src/utils.js';
 
 const settings = {
   min: 0,

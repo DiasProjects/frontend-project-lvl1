@@ -16,12 +16,6 @@ const messages = {
   final: 'Congratulations,',
 };
 
-const getRandomInt = (min, max) => {
-  const minRounded = Math.ceil(min);
-  const maxRounded = Math.floor(max);
-  return Math.floor(Math.random() * (maxRounded - minRounded + 1)) + minRounded;
-};
-
 const getUserAnswer = () => {
   const answer = readlineSync.question(messages.getAnswer);
   return answer;
@@ -57,7 +51,4 @@ const gameEngine = (options) => {
   }
 };
 
-export {
-  gameEngine,
-  getRandomInt,
-};
+export default gameEngine;

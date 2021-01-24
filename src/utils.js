@@ -10,7 +10,14 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (maxRounded - minRounded + 1)) + minRounded;
 };
 
+const generateProgression = (options) => {
+  const { length, startValue, step } = options;
+  const arr = new Array(length).fill(startValue);
+  return arr.map((item, index) => item + step * index);
+};
+
 export {
   calcNod,
   getRandomInt,
+  generateProgression,
 };

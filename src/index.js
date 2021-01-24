@@ -37,7 +37,7 @@ const gameEngine = (options) => {
 
     if (userAnswer !== correctAnswer) {
       console.log(`'${userAnswer}' ${messages.wrongAnswer} '${correctAnswer}'.`);
-      console.log(`${messages.tryAgain} ${userName}!`);
+      console.log(`${messages.tryAgain}, ${userName}!`);
       return;
     }
 
